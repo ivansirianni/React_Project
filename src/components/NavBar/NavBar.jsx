@@ -9,8 +9,7 @@ import CartWidget from '../CartWidget/CartWidget';
 function NavBar() {
   return (
     <Navbar  bg="dark" variant="dark" expand="lg" fixed="top">
-      <Container fluid>
-        <Navbar.Brand href="#">New E-Commerce</Navbar.Brand>
+      <Container fluid>        
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
