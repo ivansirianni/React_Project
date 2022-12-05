@@ -1,32 +1,34 @@
 import { Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs"
 import Contact from "./pages/Contact"
-import NotFound from "./pages/NotFound";
 import StoreList from "./pages/Store/StoreList";
 import Store from "./pages/Store/Store"
+import { BrowserRouter } from "react-router-dom";
 import "./App.css"
+import Layout from "./components/Layout/Layout";
+import NotFound from "./pages/NotFound";
 
 export default function WebStore() {
   return (
     <div className="store">
-      <Layout>
-        <Routes>
-          <Route path ="/" element ={<Home />} />
-          <Route path ="/home" element ={<Home />}>
-              <Route path="store" element={<StoreList />} />
-              <Route path=":store" element={<Store />}/>
-          </Route>
-          <Route caseSensitive path ="/about-us" element ={<AboutUs />} />
-          <Route caseSentisive path ="/contact" element ={<Contact />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Layout>
+     <BrowserRouter>
+        <Layout>
+          <Routes>
+          
+            <Route path ="/" element ={<Home />}>
+                <Route path="store" element={<StoreList />} />
+                <Route path=":store" element={<Store />}/>
+            </Route>
+            <Route caseSensitive path ="/about-us" element ={<AboutUs />} />
+            <Route caseSentisive path ="/contact" element ={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+      </Layout>  
+      </BrowserRouter>
     </div>
   )
 }
-
 
 // function App() {
 //   return (
@@ -68,3 +70,35 @@ export default function WebStore() {
 
 
 // export default App;
+
+
+
+
+// import { Routes, Route } from "react-router-dom";
+// import Layout from "./components/Layout/Layout";
+// import Home from "./pages/Home";
+// import AboutUs from "./pages/AboutUs"
+// import Contact from "./pages/Contact"
+// import NotFound from "./pages/NotFound";
+// import StoreList from "./pages/Store/StoreList";
+// import Store from "./pages/Store/Store"
+// import "./App.css"
+
+// export default function WebStore() {
+//   return (
+//     <div className="store">
+//       <Layout>
+//         <Routes>
+//           <Route path ="/" element ={<Home />} />
+//           <Route path ="/home" element ={<Home />}>
+//               <Route path="store" element={<StoreList />} />
+//               <Route path=":store" element={<Store />}/>
+//           </Route>
+//           <Route caseSensitive path ="/about-us" element ={<AboutUs />} />
+//           <Route caseSentisive path ="/contact" element ={<Contact />} />
+//           <Route path="*" element={<NotFound />} />
+//         </Routes>
+//       </Layout>
+//     </div>
+//   )
+// }

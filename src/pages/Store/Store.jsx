@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { getProject } from "../../components/Services/index";
 import "./Store.css"
 
-export default function Store(props){
+export default function Store(){
     const [projectData, setProjectData] = useState(null);
     const { project } = useParams();
 

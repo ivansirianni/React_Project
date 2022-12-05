@@ -1,4 +1,4 @@
-import NavBar from "../NavBar/NavBar";
+import NavBar from "../Layout/components/NavBar";
 import { PAGES } from "../Utilities/main_pages"
 import "./Layout.css"
 
