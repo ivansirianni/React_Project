@@ -1,14 +1,13 @@
-import {Navlink as ReactRouterNavLink} from "react-router-dom"
+import { NavLink as ReactRouterNavLink } from "react-router-dom";
 
-export default function Navlink (props){
-    const { to, label } = props;
-
-    return(
-        <ReactRouterNavLink
-            to={to}
-            className={({isActive}) => (isActive ? "active-page" : "")}
-        >
-            {label}
-        </ReactRouterNavLink>
-    );
+export default function NavLink(props) {
+  const { to, label } = props;
+  return (
+    <ReactRouterNavLink
+      to={to}
+      className={({ isActive }) => (isActive ? "active-page" : "")}
+    >
+      {label}
+    </ReactRouterNavLink>
+  );
 }

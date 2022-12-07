@@ -1,0 +1,23 @@
+.about-me__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+ 
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 10%;
+  
+}
+
+
+.about-me__container > .links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  text-decoration: none
+}
+

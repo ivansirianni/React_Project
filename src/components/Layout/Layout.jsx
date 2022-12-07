@@ -1,15 +1,27 @@
-import NavBar from "../Layout/components/NavBar";
-import { PAGES } from "../Utilities/main_pages"
-import "./Layout.css"
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import { PAGES } from "../../utilities/main-pages";
+import "./Layout.css";
 
-export default function Layout(props){
-    const { children } = props;
+export default function Layout(props) {
+  const { children } = props;
 
-
-    return (
-        <div className="layout-container">
-            <NavBar pages={PAGES} />
-            {children}
-        </div>
-    );
+  return (
+    <div className="layout__container">
+      <header className="head">
+        <Navbar pages={PAGES} />
+      </header>
+      <main className="main">
+        {children}
+      </main>
+      <footer className="foot">
+        <Footer area="footer" />
+      </footer>
+    </div>
+  );
 }
+/* <div className="layout__container">
+<Navbar pages={PAGES} />
+{children}
+<Footer area="footer" />
+</div> */
