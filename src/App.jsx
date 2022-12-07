@@ -9,9 +9,9 @@ import ItemDetailContainer from "./pages/ItemsContainer/ItemDetailContainer";
 import ItemFruitContainer from "./pages/ItemsContainer/ItemsFruitContainer"
 import ItemFruit from "./pages/ItemsContainer/ItemFruit"
 import 'bootstrap/dist/css/bootstrap.css';
-import "./Portfolio.css";
+import "./my-app.css";
 
-function Portfolio() {
+function MyStore() {
   return (
     <div className="portfolio">
       
@@ -20,8 +20,9 @@ function Portfolio() {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/categories" element={<Categories />}>            
-              <Route path="Agroecological Fruit Packs" element={<ItemFruitContainer />} />
+              <Route path="Agroecological Fruit Packs" element={<ItemFruitContainer />}>
                 <Route path=":project" element={<ItemFruit />} />
+              </Route>
               <Route path="Agroecological Vegetable Packs" element={<ItemListContainer />}>              
                 <Route path=":project" element={<ItemDetailContainer />} />
               </Route>
@@ -35,4 +36,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default MyStore;
