@@ -1,9 +1,9 @@
-import { ITEMS_LIST, ITEMS_LIST_DETAILS,ITEMS_FRUIT_LIST, ITEMS_FRUIT_LIST_DETAILS } from "../utilities/projects";
+import { ITEMS_LIST_DETAILS, ITEMS_FRUIT_LIST_DETAILS } from "../utilities/projects";
 
 export function getAllProjects() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(ITEMS_LIST);
+      resolve(ITEMS_LIST_DETAILS);
     }, 2000);
   });
 }
@@ -20,7 +20,7 @@ export function getProject(projectId) {
 export function getFruitProjects() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(ITEMS_FRUIT_LIST);
+      resolve(ITEMS_FRUIT_LIST_DETAILS);
     }, 2000);
   });
 }

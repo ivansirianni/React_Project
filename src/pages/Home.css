@@ -4,11 +4,19 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-image: url(../../public/img/Productos_organicos_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .img{
   width: 70vh;
   height: 50vh;
 }
 .header > .welcome {
-  font-size: 2rem;
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px solid black;
 }

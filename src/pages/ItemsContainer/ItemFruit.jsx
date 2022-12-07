@@ -4,15 +4,15 @@ import { getFruit } from "../../services/index";
 import CartWidget from "../../components/Layout/components/Navbar/CartWidget/CartWidget";
 import "./ItemDetailContainer.css";
 
-export default function ItemDetailContainer() {
+export default function ItemFruit() {
   const [projectData, setProjectData] = useState(null);
-  const { project } = useParams();
+  const { projects } = useParams();
 
   useEffect(() => {
-    getFruit(project).then((projectData) => {      
+    getFruit(projects).then((projectData) => {      
       setProjectData(projectData);
     });
-  }, [project]);
+  }, [projects]);
 
   return (
     <>

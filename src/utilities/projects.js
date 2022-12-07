@@ -1,20 +1,3 @@
-export const ITEMS_LIST = [
-  {
-    id: "pack_vegetables_1",
-    name: "Small Pack",
-    packs: ["Lettuce, Tomatoes, Garlick, Potatoes, Corn"],
-  },
-  {
-    id: "pack_vegetables_2",
-    name: "Medium Pack",
-    packs: ["Lettuce, Tomatoes, Garlick, Potatoes, Corn, Broccoli, Pumpkin, Onions, Carrot"],
-  },
-  {
-    id: "pack_vegetables_3",
-    name: "Large Pack",
-    packs: ["Lettuce, Tomatoes, Garlick, Potatoes, Corn, Broccoli, Pumpkin, Onions, Carrot, Leek, Cauliflower, Chard"],
-  },
-];
 
 export const ITEMS_LIST_DETAILS = [
   {
@@ -56,25 +39,6 @@ export const ITEMS_LIST_DETAILS = [
 ];
 
 
-
-
-export const ITEMS_FRUIT_LIST = [
-  {
-    id: "pack_frutis_1",
-    name: "Small Pack",
-    packs: ["Apple, Banana, Kiwi, Orange, Orangina"],
-  },
-  {
-    id: "pack_fruits_2",
-    name: "Medium Pack",
-    packs: ["Apple, Banana, Kiwi, Orange, Orangina, Peach, Pineapple, Melon"],
-  },
-  {
-    id: "pack_fruits_3",
-    name: "Large Pack",
-    packs: ["Apple, Banana, Kiwi, Orange, Orangina, Peach, Pineapple, Melon, Watermelon, Fig, Dragon Fruit, Pear"],
-  },
-];
 
 export const ITEMS_FRUIT_LIST_DETAILS = [
   {
